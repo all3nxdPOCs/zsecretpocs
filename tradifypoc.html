@@ -1,0 +1,1072 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Tradify Login | Log in to your Tradify Account | Tradify™</title>
+    <meta name="description" content="Use this page to log in to your Tradify account. The fastest, easiest and simplest way to manage your trade business." />
+    <meta name="apple-itunes-app" content="app-id=984378901">
+    <meta name="google-play-app" content="app-id=com.tradifyhq.tradifyapp">
+    <meta name="theme-color" content="#009ec7" />
+    <link rel="icon" href="/images/cropped-Tradify-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/images/cropped-Tradify-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/images/cropped-Tradify-favicon-180x180.png" />
+
+    <link rel="preload" href="/fonts/font-awesome/fontawesome-webfont.woff2?v=4.5.0" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/web-icons/web-icons.woff2?v=0.2.3" as="font" type="font/woff2" crossorigin>
+
+    <meta name="msapplication-TileImage" content="/images/cropped-Tradify-favicon-270x270.png" />
+    <script>
+        window.paceOptions = {
+            restartOnPushState: false,
+            restartOnRequestAfter: false,
+            extraSources: [],
+            eventLag: {
+                lagThreshold: 10
+            }
+        };
+
+        !function(){window.finishedLoading=!1;var n=function(){function n(){this.progress=0,this.check()}return n.prototype.check=function(){var n=this;return window.finishedLoading?this.done():setTimeout(function(){return n.check()},100)},n.prototype.done=function(){return this.progress=100},n}();window.paceOptions.extraSources.push(n)}();
+    </script>
+    <script src="/Scripts/pace.min.js"></script>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <style>
+        .pace {-webkit-user-select:none;-moz-user-select:none;user-select:none;z-index:9999;position:fixed;margin:auto;height:100%;width:100%;background:#fff;overflow:hidden;text-align:center;top:0;left:0;right:0;bottom:0}.pace .pace-progress,.pace .pace-progress::before{background-image:url(/images/cropped-Tradify-favicon-270x270.png);background-size:cover}.pace .pace-progress{-moz-transform:none!important;-ms-transform:none!important;-o-transform:none!important;-webkit-transform:none!important;transform:none!important;height:140px;width:140px;position:absolute;top:50%;left:50%;margin-left:-70px;margin-top:-70px}.pace .pace-progress-inner,.pace .pace-progress::before{content:" ";display:block;width:100%;height:100%}.pace .pace-progress::before{float:left;-ms-opacity:.1;opacity:.1;width:140px;height:140px}.pace .pace-progress-inner{background-color:#fff;-webkit-transition:height ease .5s;-moz-transition:height ease .1s;-ms-transition:height ease .1s;-o-transition:height ease .1s;transition:height ease .1s}.pace.pace-inactive{display:none}.pace-running{overflow:hidden!important}
+        html { display: none; }
+    </style>
+    <script>
+    window._jsLoader = function () { var n = [], t = !1; return { push: function (u) { t ? u() : n.push(u) }, exec: function () { if (!t) for (t = !0; n.length;) n.pop()() } } }();
+</script>
+
+    <script>
+
+    // Prevent console errors in debug mode
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Intercom API Queue
+    (function (u) {
+        if (!window[u]) {
+            var n = function n() {
+                for (var e = arguments.length, t = Array(e), r = 0; r < e; r++) t[r] = arguments[r];
+                n.q.push(t)
+            };
+            n.q = [], window[u] = n
+        }
+    })("Intercom");
+
+</script>
+    <script>
+        if (self === top) { document.documentElement.style.display = 'block'; } else { top.location = self.location; }
+
+        Pace.on('start', function () {
+            var innerEl = Pace.bar.el.querySelectorAll('.pace-progress-inner');
+            var displayProgress = 100;
+            Pace.bar.render = function () {
+                var p = (Math.floor((100 - this.progress) / 5) * 5);
+                if (p < displayProgress) {
+                    displayProgress = p;
+                    innerEl[0].style.height = p + "%";
+                }
+            }
+        });
+
+        Pace.on('done', function () {
+            _jsLoader.exec();
+        });
+    </script>
+
+    
+            <link href="/dist/all.min.43.css" rel="stylesheet" />
+
+</head>
+
+<body class="{{vm.routeName}}-view" ng-controller="NavigationController as vm" ncg-request-verification-token=>
+    <div id="fb-root"></div>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="Scripts/LocalFallback/jquery-3.7.1.min.js">\x3C/script>')</script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js?1.8.3" integrity="sha256-OW3BoD1swC6cUagCRuDbU8XI35vQcofjtRvOSinas1U=" crossorigin="anonymous"></script>
+            <script>window.angular || document.write('<script src="Scripts/LocalFallback/angular-1.8.3.min.js">\x3C/script>')</script>
+            <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js" integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+            <script>window.jQuery.ui || document.write('<script src="Scripts/LocalFallback/jquery-ui-1.14.0.min.js">\x3C/script>')</script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-sanitize.min.js?1.8.3" integrity="sha256-zICjCtBDnC6cIJs9f8/7HRDmAH/R0AycwUTzk2ZKcEU=" crossorigin="anonymous"></script>
+            <script>try { angular.module("ngSanitize") } catch (err) { document.write('<script src="Scripts/LocalFallback/angular-sanitize-1.8.3.min.js">\x3C/script>') }</script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+            <script>window.$.fn.modal || document.write('<script src="Scripts/LocalFallback/bootstrap-3.4.1.min.js">\x3C/script>')</script>
+            <script src="/Scripts/system-polyfills.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/core-js-bundle@3.37.1/index.min.js?3.37.1" integrity="sha256-YTgx1EyYNbDkRHLepvujoY0vrBtKx8WE2AlwEG/Ae3g=" crossorigin="anonymous"></script>
+            <script>window['__core-js_shared__'] || document.write('<script src="Scripts/LocalFallback/corejs-3.37.1.min.js">\x3C/script>')</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.4/tinymce.min.js" crossorigin="anonymous"></script>
+            <script>window.tinyMCE || document.write('<script src="Scripts/LocalFallback/tinymce.6.8/tinymce.min.js">\x3C/script>') || document.write('<script type="text/javascript"> window.tinyMCEBaseURL = "https://" + window.location.hostname +  "/Scripts/LocalFallback/tinymce.6.8/"\x3C/script>')</script>
+            <script src="https://cdn.statuspage.io/se-v2.js"></script><!--statuspage doesn't allow SRI due to CORS policies'-->
+            <script>window.StatusPage || document.write('<script src="Scripts/LocalFallback/statuspage-se-v2.js">\x3C/script>')</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.11.4/libphonenumber-js.min.js" integrity="sha256-T9vMKEXlu65FQwWW9sEDSu6EAjv2BZNGZ/4qr9jwmlA=" crossorigin="anonymous"></script>
+            <script>window.libphonenumber || document.write('<script src="Scripts/LocalFallback/libphonenumber-js.min.js">\x3C/script>')</script>
+            <script src="/dist/vendor.all.43.js"></script>
+            <script type="text/javascript">
+                initRaygun();
+
+                rg4js('apiKey', 'XPP8ZvM4Owc1MJi3RZAA');
+                rg4js('enablePulse', true);
+                rg4js('enableCrashReporting', true);
+                rg4js('filterSensitiveData', ['password', 'confirmPassword']);
+                rg4js('setFilterScope', 'all');
+                configureRUM();
+            </script>
+            <script src="/Scripts/mutation_events.js" integrity="sha256-z7s/0K88D62qP/igJ2V2dk13sD7036czFvAwxRJJ7zQ=" crossorigin="anonymous"></script>
+            <script src="/Scripts/system.js" integrity="sha256-sckt3ZwHK0I//5Ali6SMmCy02xsBYOX8DaFLbmpOb+0=" crossorigin="anonymous"></script>
+
+
+
+    <script type="text/javascript">
+        System.import("dist/app.min.43.js").then(function () {
+            angular.bootstrap(document, ['TradifyApp']);
+            window.finishedLoading = true;
+        });
+
+        document.appVersion = 43;
+        document.clientApiVersion = 66;
+
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+    <div id="wrapper" ng-if="vm.appStateService.isInitialized" class="show">
+        <!-- When either SidebarView or SideNavView are removed, ensure the accompanying .less file is also removed. -->
+        <div ng-if="!vm.appStateService.enabledFeatures.activationSimplifiedNavigation">
+            <nav id="sidebar" ng-if="vm.showToolbar && !vm.appStateService.isAppOffline">
+    <div id="sidebar-expand-button" class="sidebar-expand-button" data-toggle="menubar" ng-click="vm.expandSidebar()" ng-hide="vm.isFreemium || vm.shouldShowTrialCTA || vm.shouldShowWarningCTA">
+        <div class="expand-button-inner" ng-class="[{'folded': vm.sidebarFolded}, {'unfolded': !vm.sidebarFolded}]">
+            <div>
+                <i ng-if="!vm.sidebarFolded" id="collapse-icon" class="fa fa-chevron-left expand-button-element"></i>
+                <span id="expand-button-text">{{vm.sidebarFolded? vm.appStringsService.open : vm.appStringsService.collapse}}</span>
+                <i ng-if="vm.sidebarFolded" id="expand-icon" class="fa fa-chevron-right expand-button-element"></i>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar-inner-container">
+        <div class="sidebar-header">
+            <div class="avatar-button-container dropdown" ng-include="'/App/Views/Common/AccountMenuView.html'"></div>
+        </div>
+        <div class="side-navigation-cta warning-cta" ng-class="{'with-close-button': vm.showWarningCTACloseButton, 'with-bottom-margin': vm.featureAccessService.taskListIsAvailable}" ng-if="vm.shouldShowWarningCTA">
+            <div class="close-button" ng-if="vm.showWarningCTACloseButton"><i class="fa fa-times" ng-click="vm.closeWarningCTA()"></i></div>
+            <div class="title-text">
+                <span>{{vm.appStringsService.sidebarCTAWarningTitleCaption}}</span>
+            </div>
+            <div class="caption-text"><p ng-bind-html="vm.cTAWarningCaption"></p></div>
+            <button class="upgrade-button" ng-click="vm.navigateToSubscriptionAndBillingSettings()" ng-if="vm.shouldShowWarningCTAButton">
+                <span>{{vm.cTAWarningButtonCaption}}</span>
+            </button>
+        </div>
+        <div class="side-navigation-cta credit-cta" ng-class="{'with-bottom-margin': vm.featureAccessService.taskListIsAvailable}" ng-if="vm.shouldShowTrialCTA">
+            <div ng-class="{'caption-text': !vm.isNonExpiredTrial, 'title-text': vm.isNonExpiredTrial}">{{vm.cTATrialCaption}}</div>
+            <button class="upgrade-button" ng-class="{'no-credit': vm.isNonExpiredTrial}" ng-click="vm.navigateToSubscriptionAndBillingSettings()">
+                <span ng-bind-html="vm.cTATrialButtonCaption"></span>
+            </button>
+        </div>
+        <div class="start-trial-overlay-container" ng-if="vm.isCompanyInfoKnown && vm.isFreemium">
+            <div class="start-trial-overlay"></div>
+            <div class="start-trial-overlay-banner">
+                <img src="/images/Try-Full-Tradify.svg" alt="{{vm.appStringsService.tryFullTradify}}" />
+            </div>
+        </div>
+        <ul ng-if="!vm.isCompanyInfoKnown"></ul>
+        <ul class="list-unstyled components" ng-if="vm.isCompanyInfoKnown && !vm.isFreemium">
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Tasks'}" ng-if="vm.featureAccessService.taskListIsAvailable || vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.ToDoTask)"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.toDoList}}" tooltip-append-to-body="true" tooltip-placement="right" ng-mouseover="vm.isToDoTaskHover = true" ng-mouseleave="vm.isToDoTaskHover = false">
+                <a ng-click="vm.featureAccessService.taskListIsAvailable ?
+                           vm.navigateToRouteAndReset('todolist/') : vm.upsellService.redirectToPricingPlan()" id="tasks-navigation-menu">
+                    <div ng-class="{'navigation-items-container': !vm.featureAccessService.taskListIsAvailable}">
+                        <i class="site-menu-icon task-list-nav-icon" aria-hidden="true" ng-class="{'folded': !vm.isToDoTaskHover && vm.sidebarFolded}"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.toDoList}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.TaskList)" class="new-label">{{vm.appStringsService.new}}</span>
+                        <span ng-if="vm.featureAccessService.taskListIsAvailable" class="dropdown-toggle circular add-new-task-button" ng-class="{'folded': vm.sidebarFolded, 'disabled': vm.isAddTaskButtonDisabled}" aria-haspopup="true" aria-expanded="true" type="button" ng-click="$event.stopPropagation();vm.addNewTaskButton()"
+                              tooltip-enable="{{!vm.isAddTaskButtonDisabled && !vm.sidebarFolded}}" uib-tooltip="{{vm.addNewTaskTooltip}}" tooltip-append-to-body="true" tooltip-placement="right" tooltip-class="margin-left-20" id="add-task-navigation-button">
+                            <i class="wb-plus"></i>
+                        </span>
+                        <upsell-padlock show-shadow="true"
+                                        show-icon="!vm.isToDoTaskHover"
+                                        sidebar-folded="vm.sidebarFolded"
+                                        ng-if="!vm.featureAccessService.taskListIsAvailable"
+                                        class="navigation-item-margin-auto"></upsell-padlock>
+                    </div>
+                </a>
+            </li>
+            <li class="divider" role="presentation" ng-class="{'sidebar-divider': !vm.featureAccessService.taskListIsAvailable}"></li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Getting Started'}" ng-if="vm.canAccessOnboardingHomepage"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.gettingStartedNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('gettingstarted-3/')" id="gs-navigation-menu">
+                    <i class="site-menu-icon fa fa-rocket" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.gettingStartedNavCaption}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.OnboardingHome)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Dashboard'}"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.dashboard}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('dashboard/')" id="dashboard-navigation-menu">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.dashboard}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Dashboard)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Enquiries' || vm.routeName == 'Enquiry'}"
+                ng-if="vm.upsellService.showOnEnquiries"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.enquiries}}" tooltip-append-to-body="true" tooltip-placement="right"
+                ng-mouseover="vm.isEnquiriesHover = true" ng-mouseleave="vm.isEnquiriesHover = false">
+                <a id="enquiries-navigation-menu"
+                   ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries) ?
+                             vm.upsellService.redirectToPricingPlan() :
+                             vm.navigateToRouteAndReset('enquiries/')">
+                    <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)}">
+                        <i class="site-menu-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="site-menu-title"
+                              ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)}">
+                            {{vm.appStringsService.enquiries}}
+                        </span>
+                        <span ng-if="vm.appStateService.entityTotals.toDoEnquiries > 0 &&
+                                     !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                              class="badge entity-total">
+                            {{vm.appStateService.entityTotals.toDoEnquiries}}
+                        </span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Enquiries) &&
+                                     vm.appStateService.entityTotals.toDoEnquiries == 0 &&
+                                     !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                              class="new-label">
+                            {{vm.appStringsService.new}}
+                        </span>
+                        <upsell-padlock
+                                show-shadow="true"
+                                        show-icon="!vm.isEnquiriesHover"
+                                        sidebar-folded="vm.sidebarFolded"
+                                        ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                                        class="navigation-item-margin-auto"></upsell-padlock>
+                    </div>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Jobs' || vm.routeName == 'Recurring Jobs' || vm.routeName == 'Job' || vm.routeName == 'Recurring Job' || vm.routeName == 'Job Templates' || vm.routeName == 'Job Template' || vm.routeName == 'Service Reminders'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.jobs}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('jobs/')" id="jobs-navigation-menu">
+                    <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.jobs}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Jobs)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Map'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.map}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('map/')" id="map-navigation-menu">
+                    <i class="site-menu-icon wb-map" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.map}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Map)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Invoices' || vm.routeName == 'Recurring Invoices' || vm.routeName == 'Invoice' || vm.routeName == 'Recurring Invoice' || vm.routeName == 'Billing Run' || vm.routeName == 'Invoice Templates' || vm.routeName == 'Invoice Template'}" ng-if="vm.appStateService.staffMember.role.canAccessInvoices"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.invoices}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('invoices/')" id="invoices-navigation-menu">
+                    <i class="site-menu-icon wb-order" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.invoices}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Invoices)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Estimates' || vm.routeName == 'Estimate' || vm.routeName == 'Estimate Templates' || vm.routeName == 'Estimate Template'}" ng-if="vm.appStateService.staffMember.role.canAccessEstimates"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.estimates}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('quotes/')" id="quotes-navigation-menu">
+                    <i class="site-menu-icon fa fa-calculator" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.estimates}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Estimates)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Purchase Orders' || vm.routeName == 'Bills' || vm.routeName == 'Purchase Order' || vm.routeName == 'Bill'}"
+                ng-if="vm.upsellService.showOnPurchases && !vm.appStateService.isFrenchCompany"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.purchases}}" tooltip-append-to-body="true" tooltip-placement="right"
+                ng-mouseover="vm.isPurchasesHover = true" ng-mouseleave="vm.isPurchasesHover = false">
+                <a id="purchase-order-navigation-menu"
+                   ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Purchases) ?
+                             vm.upsellService.redirectToPricingPlan() :
+                             vm.navigateToRouteAndReset(vm.canAccessPurchaseOrders ? 'purchaseorders/' : 'supplierinvoices/')">
+                    <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Purchases)}">
+                        <i class="site-menu-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="site-menu-title"
+                              ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Purchases)}">
+                            {{vm.appStringsService.purchases}}
+                        </span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Purchases) &&
+                                     !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Purchases)"
+                              class="new-label">
+                            {{vm.appStringsService.new}}
+                        </span>
+                        <upsell-padlock
+                                show-shadow="true"
+                                        show-icon="!vm.isPurchasesHover"
+                                        sidebar-folded="vm.sidebarFolded"
+                                        ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Purchases)"
+                                        class="navigation-item-margin-auto"></upsell-padlock>
+                    </div>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Scheduler'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.scheduler}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('scheduler/')" id="scheduler-navigation-menu">
+                    <i class="site-menu-icon fa fa-calendar" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.scheduler}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Scheduler)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Timesheets'}"
+                ng-if="vm.upsellService.showOnTimesheet"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.timesheets}}" tooltip-append-to-body="true" tooltip-placement="right"
+                ng-mouseover="vm.isTimesheetHover = true" ng-mouseleave="vm.isTimesheetHover = false">
+                <a id="timesheets-navigation-menu"
+                   ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet) ?
+                             vm.upsellService.redirectToPricingPlan() :
+                             vm.navigateToRouteAndReset('timesheets/')">
+                    <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)}">
+                        <i class="site-menu-icon wb-time" aria-hidden="true"></i>
+                        <span class="site-menu-title"
+                              ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)}">
+                            {{vm.appStringsService.timesheets}}
+                        </span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Timesheets) &&
+                                     !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)"
+                              class="new-label">
+                            {{vm.appStringsService.new}}
+                        </span>
+                        <upsell-padlock
+                                show-shadow="true"
+                                        show-icon="!vm.isTimesheetHover"
+                                        sidebar-folded="vm.sidebarFolded"
+                                        ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)"
+                                        class="navigation-item-margin-auto"></upsell-padlock>
+                    </div>
+                </a>
+            </li>
+
+            <li class="divider" role="presentation"></li>
+
+            <li class="site-menu-item website-menu-item" ng-class="{'active': vm.routeName == 'Website'}" ng-if="vm.showWebsiteEditorNavItem"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.websiteEditorNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToWebsiteEditorAndReset()" id="website-navigation-menu">
+                    <i class="site-menu-icon fa fa-desktop" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.websiteEditorNavCaption}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.WebsiteEditor)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Customers' || vm.routeName == 'Customer'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.customers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('customers/')" id="customers-navigation-menu">
+                    <i class="site-menu-icon wb-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.customers}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Customers)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Suppliers' || vm.routeName == 'Supplier'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.suppliers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('suppliers/')" id="suppliers-navigation-menu">
+                    <i class="site-menu-icon fa-truck" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.suppliers}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Suppliers)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Connections' || vm.routeName == 'Connection'}" ng-if="vm.appStateService.isConnectionsEnabled"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.connections}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('connections/')" id="connections-navigation-menu">
+                    <i class="site-menu-icon fa-share-alt" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.connections}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Connections)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Reports'}"
+                ng-if="vm.upsellService.showOnReporting"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.reports}}" tooltip-append-to-body="true" tooltip-placement="right"
+                ng-mouseover="vm.isReportingHover = true" ng-mouseleave="vm.isReportingHover = false">
+                <a id="reports-navigation-menu"
+                   ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Reports) ?
+                             vm.upsellService.redirectToPricingPlan() :
+                             vm.navigateToRouteAndReset('reports/')">
+                    <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Reports)}">
+                        <i class="site-menu-icon fa-pie-chart" aria-hidden="true"></i>
+                        <span class="site-menu-title"
+                              ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Reports)}">
+                            {{vm.appStringsService.reports}}
+                        </span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Reports) &&
+                                     !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Reports)"
+                              class="new-label">
+                            {{vm.appStringsService.new}}
+                        </span>
+                        <upsell-padlock
+                                show-shadow="true"
+                                        show-icon="!vm.isReportingHover"
+                                        sidebar-folded="vm.sidebarFolded"
+                                        ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Reports)"
+                                        class="navigation-item-margin-auto"></upsell-padlock>
+                    </div>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Settings'}"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.settings}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('settings/')" id="settings-navigation-menu">
+                    <i class="site-menu-icon wb-settings" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.settings}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Settings)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Partner Portal'}" ng-if="vm.isPartnerSession"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.partnerPortalNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('partner/')" id="partner-portal-navigation-menu">
+                    <i class="site-menu-icon fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.partnerPortalNavCaption}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.PartnerPortal)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+            <li class="divider" role="presentation"></li>
+
+            <li class="site-menu-item"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.helpButton}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.askForHelpZendesk()" id="zendesk-navigation-menu">
+                    <i class="site-menu-icon fas fa-question-circle"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.helpButton}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.HelpButton)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="list-unstyled components" ng-if="vm.isCompanyInfoKnown && vm.isFreemium">
+            <li class="divider" role="presentation"></li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Scheduler'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.scheduler}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('scheduler/')" id="scheduler-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa fa-calendar" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.scheduler}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Scheduler)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Connections' || vm.routeName == 'Connection'}" ng-if="vm.appStateService.isConnectionsEnabled"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.connections}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.navigateToRouteAndReset('connections/')" id="connections-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa-share-alt" aria-hidden="true"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.connections}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.helpButton}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a ng-click="vm.askForHelpZendesk()" id="zendesk-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fas fa-question-circle"></i>
+                    <span class="site-menu-title">{{vm.appStringsService.helpButton}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.HelpButton)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Enquiries' || vm.routeName == 'Enquiry'}" ng-if="vm.canAccessEnquiries"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.enquiries}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="enquiries-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa fa-tags" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.enquiries}}</span>
+                    <span ng-if="vm.appStateService.entityTotals.toDoEnquiries > 0" class="badge entity-total pull-right">{{vm.appStateService.entityTotals.toDoEnquiries}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Enquiries) && vm.appStateService.entityTotals.toDoEnquiries == 0" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Jobs' || vm.routeName == 'Recurring Jobs' || vm.routeName == 'Job' || vm.routeName == 'Recurring Job' || vm.routeName == 'Job Templates' || vm.routeName == 'Job Template' || vm.routeName == 'Service Reminders'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.jobs}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="jobs-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled wb-hammer" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.jobs}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Jobs)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Map'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.map}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="map-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled wb-map" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.map}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Map)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li>
+                <div id="site-menu-start-trial">
+                    <div class="start-trial-ellipse"></div>
+                    <span>{{vm.appStringsService.freemiumStartTrialNavigationBarMessage}}</span>
+                    <div id="start-trial-credit-container">
+                        <div class="start-trial-credit">
+                            <p><span style="font-size: 20px; font-weight: 500">{{vm.connectionCredit}}</span></p>
+                            <p><span style="font-size: 10px; font-weight: 400">{{vm.appStringsService.creditIncluded}}</span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="start-trial-button btn btn-black" ng-click="vm.upgradeFreemiumToTrial()">
+                            {{vm.appStringsService.startYourFreeTrial}}
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Invoices' || vm.routeName == 'Recurring Invoices' || vm.routeName == 'Invoice' || vm.routeName == 'Recurring Invoice' || vm.routeName == 'Billing Run' || vm.routeName == 'Invoice Templates' || vm.routeName == 'Invoice Template'}" ng-if="vm.appStateService.staffMember.role.canAccessInvoices"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.invoices}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="invoices-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled wb-order" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.invoices}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Invoices)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Estimates' || vm.routeName == 'Estimate' || vm.routeName == 'Estimate Templates' || vm.routeName == 'Estimate Template'}" ng-if="vm.appStateService.staffMember.role.canAccessEstimates"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.estimates}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="quotes-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa fa-calculator" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.estimates}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Estimates)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Purchase Orders' || vm.routeName == 'Bills' || vm.routeName == 'Purchase Order' || vm.routeName == 'Bill'}" ng-if="vm.appStateService.staffMember.role.canAccessPurchases && !vm.appStateService.isFrenchCompany"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.purchases}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="purchase-order-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.purchases}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Purchases)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Timesheets'}" ng-if="vm.appStateService.staffMember.role.canAccessTimesheets"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.timesheets}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="timesheets-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled wb-time" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.timesheets}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Timesheets)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="divider" role="presentation"></li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Website'}"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.websiteEditorNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="website-navigation-menu">
+                    <i class="site-menu-icon fa fa-desktop" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.websiteEditorNavCaption}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.WebsiteEditor)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Customers' || vm.routeName == 'Customer'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.customers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="customers-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled wb-users" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.customers}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Customers)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Suppliers' || vm.routeName == 'Supplier'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.suppliers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="suppliers-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled site-menu-icon-disabled fa-truck" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.suppliers}}</span>
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Suppliers)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+            <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Reports'}" ng-if="vm.appStateService.staffMember.role.canAccessReports && !vm.appStateService.isFrenchCompany"
+                tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.reports}}" tooltip-append-to-body="true" tooltip-placement="right">
+                <a id="reports-navigation-menu">
+                    <i class="site-menu-icon site-menu-icon-disabled fa-pie-chart" aria-hidden="true"></i>
+                    <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.reports}}</span>
+                    <br />
+                    <span ng-if="vm.newLabel(vm.mainNavItem.Reports)" class="new-label">{{vm.appStringsService.new}}</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-logo-container">
+            <div class="sidebar-logo-inner-container">
+                <img class="sidebar-logo" src="/images/Tradify-logo-gray.png" title="Tradify" />
+            </div>
+        </div>
+    </div>
+</nav>
+        </div>
+        <div ng-if="vm.appStateService.enabledFeatures.activationSimplifiedNavigation">
+            <nav id="sidebar" ng-if="vm.showToolbar && !vm.appStateService.isAppOffline">
+    <div id="sidebar-expand-button" class="sidebar-expand-button" data-toggle="menubar" ng-click="vm.expandSidebar()" ng-hide="vm.isFreemium || vm.shouldShowTrialCTA || vm.shouldShowWarningCTA">
+        <div class="expand-button-inner" ng-class="[{'folded': vm.sidebarFolded}, {'unfolded': !vm.sidebarFolded}]">
+            <div>
+                <i ng-if="!vm.sidebarFolded" id="collapse-icon" class="fa fa-chevron-left expand-button-element"></i>
+                <span id="expand-button-text">{{vm.sidebarFolded? vm.appStringsService.open : vm.appStringsService.collapse}}</span>
+                <i ng-if="vm.sidebarFolded" id="expand-icon" class="fa fa-chevron-right expand-button-element"></i>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar-inner-container">
+        <div class="sidebar-header">
+            <div class="avatar-button-container dropdown" ng-include="'/App/Views/Common/AccountMenuView.html'"></div>
+        </div>
+        <div class="side-navigation-cta warning-cta" ng-class="{'with-close-button': vm.showWarningCTACloseButton, 'with-bottom-margin': vm.featureAccessService.taskListIsAvailable}" ng-if="vm.shouldShowWarningCTA">
+            <div class="close-button" ng-if="vm.showWarningCTACloseButton"><i class="fa fa-times" ng-click="vm.closeWarningCTA()"></i></div>
+            <div class="title-text">
+                <span>{{vm.appStringsService.sidebarCTAWarningTitleCaption}}</span>
+            </div>
+            <div class="caption-text"><p ng-bind-html="vm.cTAWarningCaption"></p></div>
+            <button class="upgrade-button" ng-click="vm.navigateToSubscriptionAndBillingSettings()" ng-if="vm.shouldShowWarningCTAButton">
+                <span>{{vm.cTAWarningButtonCaption}}</span>
+            </button>
+        </div>
+        <div class="side-navigation-cta credit-cta" ng-class="{'with-bottom-margin': vm.featureAccessService.taskListIsAvailable}" ng-if="vm.shouldShowTrialCTA">
+            <div ng-class="{'caption-text': !vm.isNonExpiredTrial, 'title-text': vm.isNonExpiredTrial}">{{vm.cTATrialCaption}}</div>
+            <button class="upgrade-button" ng-class="{'no-credit': vm.isNonExpiredTrial}" ng-click="vm.navigateToSubscriptionAndBillingSettings()">
+                <span ng-bind-html="vm.cTATrialButtonCaption"></span>
+            </button>
+        </div>
+        <ul ng-if="!vm.isCompanyInfoKnown"></ul>
+        <div class="side-menu-list" ng-if="vm.isCompanyInfoKnown">
+            <ul class="list-unstyled components" ng-if="!vm.isFreemium">
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Tasks'}" ng-if="vm.featureAccessService.taskListIsAvailable || vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.ToDoTask)"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.toDoList}}" tooltip-append-to-body="true" tooltip-placement="right" ng-mouseover="vm.isToDoTaskHover = true" ng-mouseleave="vm.isToDoTaskHover = false">
+                    <a ng-click="vm.featureAccessService.taskListIsAvailable ?
+                                 vm.navigateToRouteAndReset('todolist/') : vm.upsellService.redirectToPricingPlan()" id="tasks-navigation-menu">
+                        <div ng-class="{'navigation-items-container': !vm.featureAccessService.taskListIsAvailable}">
+                            <i class="site-menu-icon task-list-nav-icon" aria-hidden="true" ng-class="{'folded': !vm.isToDoTaskHover && vm.sidebarFolded}"></i>
+                            <span class="site-menu-title">{{vm.appStringsService.toDoList}}</span>
+                            <span ng-if="vm.featureAccessService.taskListIsAvailable" class="dropdown-toggle circular add-new-task-button" ng-class="{'folded': vm.sidebarFolded, 'disabled': vm.isAddTaskButtonDisabled}" aria-haspopup="true" aria-expanded="true" type="button" ng-click="$event.stopPropagation();vm.addNewTaskButton()"
+                                  tooltip-enable="{{!vm.isAddTaskButtonDisabled && !vm.sidebarFolded}}" uib-tooltip="{{vm.addNewTaskTooltip}}" tooltip-append-to-body="true" tooltip-placement="right" tooltip-class="margin-left-20" id="add-task-navigation-button">
+                                <i class="wb-plus"></i>
+                            </span>
+                            <upsell-padlock show-shadow="true"
+                                            show-icon="!vm.isToDoTaskHover"
+                                            sidebar-folded="vm.sidebarFolded"
+                                            ng-if="!vm.featureAccessService.taskListIsAvailable"
+                                            class="navigation-item-margin-auto"></upsell-padlock>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider sidebar-divider" role="presentation"></li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Getting Started'}" ng-if="vm.canAccessOnboardingHomepage"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.gettingStartedNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('gettingstarted-3/')" id="gs-navigation-menu">
+                        <i class="site-menu-icon fa fa-rocket" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.gettingStartedNavCaption}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.OnboardingHome)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Dashboard'}"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.dashboard}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('dashboard/')" id="dashboard-navigation-menu">
+                        <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.dashboard}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Dashboard)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Enquiries' || vm.routeName == 'Enquiry'}" ng-if="vm.showEnquiriesInMainNav"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.enquiries}}" tooltip-append-to-body="true" tooltip-placement="right"
+                    ng-mouseover="vm.isEnquiriesHover = true" ng-mouseleave="vm.isEnquiriesHover = false">
+                    <a id="enquiries-navigation-menu"
+                       ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries) ?
+                                 vm.upsellService.redirectToPricingPlan() :
+                                 vm.navigateToRouteAndReset('enquiries/')">
+                        <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)}">
+                            <i class="site-menu-icon fa fa-tags" aria-hidden="true"></i>
+                            <span class="site-menu-title"
+                                  ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)}">
+                                {{vm.appStringsService.enquiries}}
+                            </span>
+                            <span ng-if="vm.appStateService.entityTotals.toDoEnquiries > 0 &&
+                                        !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                                  class="badge entity-total pull-right">
+                                {{vm.appStateService.entityTotals.toDoEnquiries}}
+                            </span>
+                            <span ng-if="vm.newLabel(vm.mainNavItem.Enquiries) &&
+                                         vm.appStateService.entityTotals.toDoEnquiries == 0 &&
+                                         !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                                  class="new-label">
+                                {{vm.appStringsService.new}}
+                            </span>
+                            <upsell-padlock show-shadow="true"
+                                            show-icon="!vm.isEnquiriesHover"
+                                            sidebar-folded="vm.sidebarFolded"
+                                            ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Enquiries)"
+                                            class="navigation-item-margin-auto"></upsell-padlock>
+                        </div>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Jobs' || vm.routeName == 'Recurring Jobs' || vm.routeName == 'Job' || vm.routeName == 'Recurring Job' || vm.routeName == 'Job Templates' || vm.routeName == 'Job Template' || vm.routeName == 'Service Reminders'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.jobs}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('jobs/')" id="jobs-navigation-menu">
+                        <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.jobs}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Jobs)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Scheduler'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.scheduler}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('scheduler/')" id="scheduler-navigation-menu">
+                        <i class="site-menu-icon fa fa-calendar" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.scheduler}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Scheduler)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Timesheets'}" ng-if="vm.showTimesheetsInMainNav"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.timesheets}}" tooltip-append-to-body="true" tooltip-placement="right"
+                    ng-mouseover="vm.isTimesheetHover = true" ng-mouseleave="vm.isTimesheetHover = false">
+                    <a id="timesheets-navigation-menu"
+                       ng-click="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet) ?
+                                 vm.upsellService.redirectToPricingPlan() :
+                                 vm.navigateToRouteAndReset('timesheets/')">
+                        <div ng-class="{'navigation-items-container': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)}">
+                            <i class="site-menu-icon wb-time" aria-hidden="true"></i>
+                            <span class="site-menu-title"
+                                  ng-class="{'navigation-text-overflow-initial': vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)}">
+                                {{vm.appStringsService.timesheets}}
+                            </span>
+                            <span ng-if="vm.newLabel(vm.mainNavItem.Timesheets) &&
+                                         !vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)"
+                                  class="new-label">
+                                {{vm.appStringsService.new}}
+                            </span>
+                            <upsell-padlock show-shadow="true"
+                                            show-icon="!vm.isTimesheetHover"
+                                            sidebar-folded="vm.sidebarFolded"
+                                            ng-if="vm.upsellService.eligibleToSeeUpsell(vm.upsellFeatureEnum.Timesheet)"
+                                            class="navigation-item-margin-auto"></upsell-padlock>
+                        </div>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Estimates' || vm.routeName == 'Estimate' || vm.routeName == 'Estimate Templates' || vm.routeName == 'Estimate Template'}" ng-if="vm.appStateService.staffMember.role.canAccessEstimates"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.estimates}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('quotes/')" id="quotes-navigation-menu">
+                        <i class="site-menu-icon fa fa-calculator" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.estimates}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Estimates)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Invoices' || vm.routeName == 'Recurring Invoices' || vm.routeName == 'Invoice' || vm.routeName == 'Recurring Invoice' || vm.routeName == 'Billing Run' || vm.routeName == 'Invoice Templates' || vm.routeName == 'Invoice Template'}" ng-if="vm.appStateService.staffMember.role.canAccessInvoices"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.invoices}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('invoices/')" id="invoices-navigation-menu">
+                        <i class="site-menu-icon wb-order" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.invoices}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Invoices)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.contactsMenuLabel}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <div ng-class="{'active': vm.isContactsMenuActive}" class="flyout-button-container dropdown" ng-include="'/App/Views/Common/SideNavContactsMenuView.html'"></div>
+                </li>
+
+                <li tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.moreMenuLabel}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <div ng-class="{'active': vm.isMoreMenuActive}" class="flyout-button-container dropdown" ng-include="'/App/Views/Common/SideNavMoreMenuView.html'"></div>
+                </li>
+
+                <li class="divider" role="presentation"></li>
+
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Settings'}"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.settings}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('settings/')" id="settings-navigation-menu">
+                        <i class="site-menu-icon wb-settings" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.settings}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Settings)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Partner Portal'}" ng-if="vm.isPartnerSession"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.partnerPortalNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('partner/')" id="partner-portal-navigation-menu">
+                        <i class="site-menu-icon fa-users" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.partnerPortalNavCaption}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.PartnerPortal)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.helpButton}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.askForHelpZendesk()" id="zendesk-navigation-menu">
+                        <i class="site-menu-icon fas fa-question-circle"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.helpButton}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.HelpButton)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled components" ng-if="vm.isFreemium">
+                <li class="divider" role="presentation"></li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Scheduler'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.scheduler}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('scheduler/')" id="scheduler-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa fa-calendar" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.scheduler}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Scheduler)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item" ng-class="{'active': vm.routeName == 'Connections' || vm.routeName == 'Connection'}" ng-if="vm.appStateService.isConnectionsEnabled"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.connections}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.navigateToRouteAndReset('connections/')" id="connections-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa-share-alt" aria-hidden="true"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.connections}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.helpButton}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a ng-click="vm.askForHelpZendesk()" id="zendesk-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fas fa-question-circle"></i>
+                        <span class="site-menu-title">{{vm.appStringsService.helpButton}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.HelpButton)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Enquiries' || vm.routeName == 'Enquiry'}" ng-if="vm.canAccessEnquiries"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.enquiries}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="enquiries-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa fa-tags" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.enquiries}}</span>
+                        <span ng-if="vm.appStateService.entityTotals.toDoEnquiries > 0" class="badge entity-total pull-right">{{vm.appStateService.entityTotals.toDoEnquiries}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Enquiries) && vm.appStateService.entityTotals.toDoEnquiries == 0" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Jobs' || vm.routeName == 'Recurring Jobs' || vm.routeName == 'Job' || vm.routeName == 'Recurring Job' || vm.routeName == 'Job Templates' || vm.routeName == 'Job Template' || vm.routeName == 'Service Reminders'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.jobs}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="jobs-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled wb-hammer" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.jobs}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Jobs)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Map'}" ng-if="vm.appStateService.staffMember.role.canAccessJobs"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.map}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="map-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled wb-map" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.map}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Map)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li>
+                    <div id="site-menu-start-trial">
+                        <div class="start-trial-ellipse"></div>
+                        <span>{{vm.appStringsService.freemiumStartTrialNavigationBarMessage}}</span>
+                        <div id="start-trial-credit-container">
+                            <div class="start-trial-credit">
+                                <p><span style="font-size: 20px; font-weight: 500">{{vm.connectionCredit}}</span></p>
+                                <p><span style="font-size: 10px; font-weight: 400">{{vm.appStringsService.creditIncluded}}</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="start-trial-button btn btn-black" ng-click="vm.upgradeFreemiumToTrial()">
+                                {{vm.appStringsService.startYourFreeTrial}}
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Invoices' || vm.routeName == 'Recurring Invoices' || vm.routeName == 'Invoice' || vm.routeName == 'Recurring Invoice' || vm.routeName == 'Billing Run' || vm.routeName == 'Invoice Templates' || vm.routeName == 'Invoice Template'}" ng-if="vm.appStateService.staffMember.role.canAccessInvoices"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.invoices}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="invoices-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled wb-order" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.invoices}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Invoices)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Estimates' || vm.routeName == 'Estimate' || vm.routeName == 'Estimate Templates' || vm.routeName == 'Estimate Template'}" ng-if="vm.appStateService.staffMember.role.canAccessEstimates"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.estimates}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="quotes-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa fa-calculator" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.estimates}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Estimates)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Purchase Orders' || vm.routeName == 'Bills' || vm.routeName == 'Purchase Order' || vm.routeName == 'Bill'}" ng-if="vm.appStateService.staffMember.role.canAccessPurchases && !vm.appStateService.isFrenchCompany && vm.billsOrPurchaseOrderIsAvailable"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.purchases}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="purchase-order-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.purchases}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Purchases)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Timesheets'}" ng-if="vm.appStateService.staffMember.role.canAccessTimesheets"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.timesheets}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="timesheets-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled wb-time" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.timesheets}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Timesheets)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="divider" role="presentation"></li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Website'}"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.websiteEditorNavCaption}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="website-navigation-menu">
+                        <i class="site-menu-icon fa fa-desktop" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.websiteEditorNavCaption}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.WebsiteEditor)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Customers' || vm.routeName == 'Customer'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.customers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="customers-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled wb-users" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.customers}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Customers)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Suppliers' || vm.routeName == 'Supplier'}" ng-if="vm.appStateService.staffMember.role.canAccessSettings"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.suppliers}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="suppliers-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled site-menu-icon-disabled fa-truck" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.suppliers}}</span>
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Suppliers)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+                <li class="site-menu-item freemium-disabled" ng-class="{'active': vm.routeName == 'Reports'}" ng-if="vm.featureAccessService.canAccessReporting"
+                    tooltip-enable="{{vm.sidebarFolded}}" uib-tooltip="{{vm.appStringsService.reports}}" tooltip-append-to-body="true" tooltip-placement="right">
+                    <a id="reports-navigation-menu">
+                        <i class="site-menu-icon site-menu-icon-disabled fa-pie-chart" aria-hidden="true"></i>
+                        <span class="site-menu-title site-menu-title-disabled">{{vm.appStringsService.reports}}</span>
+                        <br />
+                        <span ng-if="vm.newLabel(vm.mainNavItem.Reports)" class="new-label">{{vm.appStringsService.new}}</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-logo-container">
+                <div class="sidebar-logo-inner-container">
+                    <img class="sidebar-logo" src="/images/Tradify-logo-gray.png" title="Tradify" />
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+        </div>
+        <div id="content">
+            <div ng-include="'/App/Views/Common/BannerView.html'"></div>
+            <div id="offline-alert" ng-if="vm.isAppOffline">
+    <div class="alert offline-panel offline clear-fix inline-block">
+        <span>{{vm.appStringsService.offlineMessage}}</span>
+        <button class="btn pull-right btn-refresh margin-left-20" ng-click="vm.reload()"><i class="icon fa-refresh" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+<div class="top-bar">
+    <div class="spinner-container busy-indicator">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <span class="busy-indicator-text"></span>
+    </div>
+</div>
+
+<status-page-widget></status-page-widget>
+
+<script type="text/ng-template" id="invoicesTooltip.html">
+    <div class="estimate-invoice">
+        <b class="estimate-invoice-number">{{vm.appStringsService.invoice}}</b>
+        <b class="estimate-invoice-duedate">{{vm.appStringsService.dueDate}}</b>
+        <b class="estimate-invoice-amount">{{vm.appStringsService.copiedFromEstimate}}</b>
+        <b class="estimate-invoice-status">{{vm.appStringsService.invoiceStatus}}</b>
+    </div>
+    <div class="estimate-invoice" ng-repeat="inv in vm.estimate.invoices">
+        <a ng-if="vm.isEditInvoiceEnabled" ng-click="vm.editInvoice(inv)" class="estimate-invoice-number">{{inv.invoiceNumber}}</a>
+        <div ng-if="!vm.isEditInvoiceEnabled" class="estimate-invoice-number">{{inv.invoiceNumber}}</div>
+        <div class="estimate-invoice-duedate">{{inv.dueDate | date}}</div>
+        <div class="estimate-invoice-amount">{{inv.amountCopiedFromEstimate | currency}}</div>
+        <div class="estimate-invoice-status">{{inv.statusCaption}}</div>
+    </div>
+</script>
+
+            <div id="content-page">
+                <ol class="breadcrumb" ng-if="vm.appStateService.shouldShowBreadcrumb">
+                    <li><a href="#"><span class="icon fa-home fa"></span></a></li>&nbsp;
+                    <li class="active" ng-repeat="route in vm.historyService.routes">
+                        &nbsp;<a ng-click="vm.navigateToRoute(route.path)">{{route.name}}</a> &nbsp;
+                    </li>
+                </ol>
+                <ng-view id="view-container">
+                </ng-view>
+            </div>
+        </div>
+    </div>
+<!-- Google Tag Manager -->
+<script>
+    _jsLoader.push(function () {
+        (function (w, d, s, l, i) {
+            var env = '&amp;gtm_auth=ATKFihn2tpC4ECH8Og9HPw&amp;gtm_preview=env-26&amp;gtm_cookies_win=x'.replace(/&amp;/g, '&');
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js',
+                ip: '115.188.146.225'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://analytics.tradifyhq.com/gtm.js?id=' + i + dl + env;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N3XLFJM');
+    });
+</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    var gtagOptions = {
+        'transport_type': 'beacon',
+        'transport_url': 'https://analytics.tradifyhq.com',
+        'send_page_view': false,
+        'first_party_collection': true,
+        'allow_enhanced_conversions': true
+    };
+
+    if (checkDebugMode()) {
+        gtagOptions.debug_mode = true
+    }
+
+    gtag('config', 'G-JFK5Q7MQ9L', gtagOptions); // Web
+    gtag('config', 'G-R36SPPMVHW', gtagOptions); // Web & Apps
+
+    gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'analytics_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted',
+        'security_storage': 'granted',
+    });
+
+    function checkDebugMode() {
+        var debugMode = window.location.search.indexOf('ga4_debug_mode=1') !== -1
+            || document.cookie.indexOf('ga4_debug_mode=1') !== -1;
+        if (debugMode) console.log('GA4 Debug Mode');
+        return debugMode;
+    }
+    
+</script>
+
+<script>
+
+    gtag('set', {
+        'dimension10': 'true',
+        'enable_paid_conversion_gtm': true,
+        'ga4_id_added': true
+    });
+
+
+</script><script>
+    _jsLoader.push(function () {
+        var js = document.createElement('script');
+        js.async = 1;
+        js.type = 'text/javascript';
+        js.src = 'https://widget.intercom.io/widget/yh00jsoh';
+        document.body.appendChild(js);
+    });
+</script><script>
+    _jsLoader.push(function () {
+        window.wistiaSilenceGlobalWarnings = true;
+        var js = document.createElement('script');
+        js.async = 1;
+        js.type = 'text/javascript';
+        js.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+        document.body.appendChild(js);
+    });
+</script>
+
+    
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,300italic'>
+    <link rel="stylesheet" href="/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome/font-awesome.css">
+
+    
+    
+    <link rel="stylesheet" href="https://use.typekit.net/viz2oxj.css" />
+</body>
+</html>
