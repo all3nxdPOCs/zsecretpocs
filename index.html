@@ -116,7 +116,7 @@
     <div class="background-gif"></div>
     <div class="overlay"></div>
     <div class="scanlines"></div>
-    <div class="timer">30</div>
+    <div class="timer">60</div>
     <div class="marquee-container">
         <div class="marquee-text">Nothing to see here.</div>
         <div class="marquee-text">If you're looking for RackCreator. It is currently on hold. Thanks!</div>
@@ -126,7 +126,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const backgroundGif = document.querySelector('.background-gif');
             const timer = document.querySelector('.timer');
-            let timeLeft = 30;
+            let timeLeft = 60;
 
             // Update timer every second
             const countdown = setInterval(() => {
