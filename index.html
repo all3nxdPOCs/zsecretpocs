@@ -1,80 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-Only Maze Game</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: #333;
+            padding: 10px 0;
+            margin: 20px 0;
         }
-        h1 {
-            color: #333;
-        }
-        .maze {
+
+        .marquee-text {
             display: inline-block;
-            margin: 20px 0;
-            border: 5px solid #333;
-            border-radius: 10px;
-            background-color: #eee;
-            padding: 5px;
+            animation: marquee 15s linear infinite;
+            padding-left: 100%;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        .row {
-            display: flex;
-            height: 40px;
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
-        .cell {
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            border: 1px solid #ccc;
+
+        /* Optional: Pause animation on hover */
+        .marquee-container:hover .marquee-text {
+            animation-play-state: paused;
         }
-        .wall {
-            background-color: #333;
-        }
-        .start {
-            background-color: #4CAF50;
-        }
-        .end {
-            background-color: #F44336;
-        }
-        .path {
-            background-color: #fff;
-        }
-        .path:hover {
-            background-color: #BBDEFB;
-            cursor: pointer;
-        }
-        .path:active {
-            background-color: #90CAF9;
-        }
-        .hidden {
-            display: none;
-        }
-        details summary {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
-        details[open] summary {
-            background-color: #e0e0e0;
-        }
-        .message {
-            margin: 20px 0;
-            font-weight: bold;
-            color: #4CAF50;
-            display: none;
-        }
-        #win:target {
-            display: block;
-            animation: celebrate 1s infinite alternate;
-        }
-        @keyframes celebrate {
-            from { color: #4CAF50; }
-            to { color: #F44336; }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee-text">Nothing to see here.</div>
+    </div>
+</body>
+</html>
